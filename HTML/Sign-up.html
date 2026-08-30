@@ -5,16 +5,22 @@
         <link rel="StyleSheet" href="/CSS/Sign-up.css">
     </head>
     <body>
-        <div>
-            <h1 class="signup-container">Sign up</h1>
+        <p class="compilex-class">
+            CompileX
+        </p>
+        <div class="signup-container">
+            <p class="signup-title">Sign up</p>
             <div class="details">
                 <input placeholder="Name" class="details-input">
-                <input placeholder="Email" class="details-input">
-                <input placeholder="Password" class="details-input">
+                <input type="email" placeholder="Email" class="details-input">
+                <input type="password" placeholder="Password" class="details-input">
                 
-                <button class="signup-button">
-                    Sign up
-                </button>
+                <form id="signupForm">
+                     <button class="signup-button">
+                        Sign up
+                    </button>
+                </form>
+               
 
                  <p class="login">
                     Already have an account? Log in
@@ -25,8 +31,11 @@
                     <p>or</p>
                     <span></span>
                 </div>
-
-                <button class="Google-button">
+                
+                <button class="Google-button" onclick="
+                    greeting();
+                ">
+                    <img src="/Icons/google-logo.svg" class="btn-icon" alt="Google logo">
                     Sign up with Google
                 </button>
             </div>
@@ -34,6 +43,6 @@
            
         </div>
         
-        <script src="Sign-Up-page/Sign-up.js"></script>
+        <script src="/Scripts/Sign-up.js"></script>
     </body>
 </html>
