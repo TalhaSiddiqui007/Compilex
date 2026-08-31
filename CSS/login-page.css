@@ -5,11 +5,15 @@
 
 body {
     font-family: "Product Sans", sans-serif;
-    background-color: rgb(242, 235, 235)
+    background-color: #0B0F17;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
 }
 
 
 .compilex-class {
+    color: white;
     font-size: 40px;
     font-weight: bold;
     text-align: center;
@@ -19,7 +23,7 @@ body {
 }
 
 .signup-title {
-    color: rgb(67, 65, 65);
+    color: white;
     text-align: center;
     font-weight: bold;
     font-size: 25px;
@@ -31,63 +35,68 @@ body {
 .signup-container {
     width: 100%;
     max-width: 350px;
-    /* Adjust width as needed */
     margin: 0 auto;
-    /* Centers the container horizontally */
-    border: 1px solid #414040;
-    /* Your border styling */
+    border: 1px solid #1E293B;
     padding: 20px;
-    /* Adds space inside the border */
     box-sizing: border-box;
     border-radius: 7px;
     box-shadow: 0 15px 5px rgba(53, 53, 53, 0.1);
-    background-color: white;
+    background-color: #111827;
 }
 
 
 .details {
     display: grid;
-    grid-template-rows: 60px 60px 15px 60px 40px 50px;
+    grid-template-rows: repeat(2, 60px) 15px 60px 40px 50px;
     align-items: center;
     justify-content: center;
     padding-top: 10px;
 }
 
 .details-input {
-    height: 25px;
-    width: 200px;
-    padding: 5px 5px 5px 5px;
+    height: 35px;
+    width: 212px;
+    padding: 5px 10px;
+    background-color: #1E293B;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    color: #FFFFFF;
+    box-sizing: border-box;
+    outline: none;
 }
 
 .login-button {
-    background-color: rgb(89, 89, 240);
+    background-color: #6366F1;
     color: white;
     border-style: none;
-    border-radius: 5px;
-    height: 35px;
+    border-radius: 6px;
+    height: 38px;
     width: 212px;
-    box-shadow: 0 9px 5px rgba(112, 8, 240, 0.1);
     cursor: pointer;
-    margin-top: 10px;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.login-button:hover {
+    background-color: #4F46E5;
 }
 
 .Google-button {
     background-color: white;
+    color: #0F172A;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 35px;
-    border-width: 2px;
-    border-radius: 5px;
-    margin-top: 15px;
-    margin-bottom: 20px;
-    box-shadow: 0 7px 5px rgba(53, 53, 53, 0.1);
+    height: 38px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
     cursor: pointer;
 }
 
 .btn-icon {
     height: 16px;
-    padding-right: 4px;
+    padding-right: 8px;
 }
 
 .or-divider {
@@ -104,30 +113,39 @@ body {
 }
 
 .or-divider p {
-    color: rgb(159, 157, 157);
-    font-size: 14px;
+    color: #94A3B8;
+    font-size: 13px;
     margin: 0;
 }
 
 .forgot-password {
     display: flex;
-    color: rgb(50, 106, 227);
+    color: #818CF8;
     font-size: 14px;
     margin: 0 auto;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
 }
 
 .signup-class {
     display: flex;
-    color: rgb(159, 157, 157);
-    font-size: 12px;
+    color: #94A3B8;
+    font-size: 13px;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
 }
 
 .signup-page-link {
-    color: rgb(42, 110, 245);
+    color: #818CF8;
     margin-right: 5px;
     margin-left: 5px;
     text-decoration: none;
+}
+
+.signup-page-link:hover {
+    text-decoration: underline;
 }
