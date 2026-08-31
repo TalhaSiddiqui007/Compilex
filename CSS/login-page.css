@@ -47,7 +47,7 @@ body {
 
 .details {
     display: grid;
-    grid-template-rows: 60px 60px 60px 50px 40px;
+    grid-template-rows: 60px 60px 15px 60px 40px 50px;
     align-items: center;
     justify-content: center;
     padding-top: 10px;
@@ -59,7 +59,7 @@ body {
     padding: 5px 5px 5px 5px;
 }
 
-.signup-button {
+.login-button {
     background-color: rgb(89, 89, 240);
     color: white;
     border-style: none;
@@ -68,6 +68,7 @@ body {
     width: 212px;
     box-shadow: 0 9px 5px rgba(112, 8, 240, 0.1);
     cursor: pointer;
+    margin-top: 10px;
 }
 
 .Google-button {
@@ -108,7 +109,14 @@ body {
     margin: 0;
 }
 
-.login-class {
+.forgot-password {
+    display: flex;
+    color: rgb(50, 106, 227);
+    font-size: 14px;
+    margin: 0 auto;
+}
+
+.signup-class {
     display: flex;
     color: rgb(159, 157, 157);
     font-size: 12px;
@@ -117,7 +125,7 @@ body {
     margin: 0 auto;
 }
 
-.login-page-link {
+.signup-page-link {
     color: rgb(42, 110, 245);
     margin-right: 5px;
     margin-left: 5px;
